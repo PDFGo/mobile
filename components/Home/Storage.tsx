@@ -15,7 +15,7 @@ interface IProps {
 
 const Storage: FC<IProps> = ({ storage }) => {
   return (
-    <View className="flex shadow-sm flex-row justify-between items-center bg-[#DEE9BE] rounded-3xl px-8 py-5">
+    <View className="flex flex-row justify-between items-center bg-[#DEE9BE] rounded-3xl px-8 py-5">
       <View className="p-4 bg-white rounded-2xl">
         <MaterialIcons name="storage" size={30} color={colors.secondary} />
       </View>

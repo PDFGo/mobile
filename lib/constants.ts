@@ -1,4 +1,7 @@
-import { IHomeScreenCard } from "./constants.types";
+import Camera from "../screens/Camera";
+import SettingsScreen from "../screens/SettingsScreen";
+import StackNavigator from "./StackNavigator";
+import { IHomeScreenCard, TabScreen } from "./constants.types";
 
 export const HomeScreenCards: IHomeScreenCard[] = [
   {
@@ -24,5 +27,30 @@ export const HomeScreenCards: IHomeScreenCard[] = [
     icon: "file-excel",
     color: "green",
     route: "PdfToExcel",
-  }
+  },
+];
+
+export const TabScreens: TabScreen[] = [
+  {
+    id: 1,
+    name: "Main",
+    component: StackNavigator,
+    icon: "ios-home",
+    focusedIcon: "ios-home-outline",
+  },
+
+  {
+    id: 2,
+    name: "Camera",
+    component: Camera,
+    icon: "camera",
+    focusedIcon: "camera-outline",
+  },
+  {
+    id: 3,
+    name: "Settings",
+    component: SettingsScreen,
+    icon: "settings",
+    focusedIcon: "settings-outline",
+  },
 ];

@@ -17,7 +17,7 @@ const Card: FC<IProps> = ({ title, icon, color, index, onPress }) => {
       }}
       className={`bg-white shadow-inner rounded-3xl mb-2 py-6 ${
         index % 2 === 0 ? "mr-4" : "ml-4"
-      } ${index === 0 || index === 1 ? "mt-0" : "mt-8"}`}
+      } ${index === 0 || index === 1 ? "mt-0" : "mt-6"}`}
     >
       <View className="flex flex-col items-center justify-center justify-items-center">
         <FontAwesome5 name={icon} size={50} color={color} />

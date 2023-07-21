@@ -32,7 +32,20 @@
         {
           "web": {
             "useFetch": false
+          },
+          "android": {
+            "permissions": [
+              "WRITE_EXTERNAL_STORAGE",
+              "READ_EXTERNAL_STORAGE"
+            ]
           }
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow gopdf to access your photos.",
+          "savePhotosPermission": "Allow goPdf to save photos."
         }
       ]
     ]

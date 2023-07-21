@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView } from "react-native";
+import { View, Text, SafeAreaView, ScrollView } from "react-native";
 import React, { FC } from "react";
 import { StatusBar } from "expo-status-bar";
 
@@ -9,8 +9,14 @@ interface IProps {
 const Wrapper: FC<IProps> = ({ children }) => {
   return (
     <SafeAreaView className="bg-[#F2F7EA]">
-      <StatusBar style="dark" />
-      <View className="bg-[#F2F7EA] h-full py-5 px-6 sm:px-20 sm:py-10">{children}</View>
+      <StatusBar
+        style="auto"
+        translucent={true}
+        hideTransitionAnimation={"slide"}
+      />
+      <View className="bg-[#F2F7EA] h-full py-5 px-6 sm:px-20 sm:py-10">
+        {children}
+      </View>
     </SafeAreaView>
   );
 };
